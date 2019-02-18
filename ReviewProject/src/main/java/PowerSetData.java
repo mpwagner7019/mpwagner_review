@@ -23,7 +23,7 @@ public class PowerSetData {
     NoSuchElementException, NegativeArraySizeException{
 
             StringTokenizer inputTokens = new StringTokenizer(string);
-            String[] RESULT = string.split("\s");
+            String[] RESULT = string.split("\\s");
 
             String str = "";
 
@@ -89,14 +89,14 @@ public class PowerSetData {
 
         switch (choice) {
         case 0 : {
-
+        			
                     PowerSet.powerSetImplementation1(myArray);
                     break;
 
                   }
         case 1 : {
                     List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
-
+                    
                     for (List<Integer> item : ans) {
                         System.out.print("[ ");
                         for (Integer item2 : item) {
@@ -110,7 +110,7 @@ public class PowerSetData {
         }
         case 2 : {
                     Set<Set<Integer>> ans = PowerSet.powerSetImplementation3(myArray);
-
+                    
                     for (Set<Integer> item : ans) {
                     System.out.print("[ ");
                     for (Integer item2 : item) {
@@ -125,7 +125,7 @@ public class PowerSetData {
                     }
         default:
             List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
-
+            
                 for (List<Integer> item : ans) {
                 System.out.print("[ ");
                 for (Integer item2 : item) {
